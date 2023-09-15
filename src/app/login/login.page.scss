@@ -67,8 +67,14 @@ ion-list{
   justify-content: center; 
   align-items: center; 
   top: 68%;
-  right: 26%;
+  right: 22%;
   position: absolute;
+}
+.anima-button{
+  position: absolute;
+  display: flex;
+  right: 30%;
+  top: 10%;
 }
 mat-slide-toggle{
   display: flex;

@@ -15,22 +15,24 @@
     </ion-card-content>
   </ion-card>
 <!-- correo and password-->
-  <!--<ion-list>
-    <ion-input label="Email" label-placement="floating"   placeholder="juanito@duoc.cl" ></ion-input>
-    <ion-input label="Password" label-placement="floating" type="{{ passwordVisible ? 'text' : 'password' }}"[(ngModel)]="password"name="password"></ion-input>
-  </ion-list>-->
 
-  
-<!--angular material--> 
+  <ion-list>
+    <ion-input label="Email" label-placement="floating"   placeholder="juanito@duoc.cl"type="email" ></ion-input>
+    <ion-input label="Password" name="password"label-placement="floating" type="{{ passwordVisible ? 'text' : 'password' }}"></ion-input>
+  </ion-list>
+
+<div class="anima-button">
+  <ion-button (click)="play()">iniciar la animacion</ion-button>
+</div>
+<!--sign up--> 
   <div class="centered-button">
-    <ion-button routerLink="/signup" shape="signup">
+    <ion-button routerLink="/signup" type="submit"  shape="signup">
       Sign up
     </ion-button>
-    <!--animacion-->
-    <ion-button (click)="play()">Play</ion-button>
+    
   </div>
   <div class="forgot-button">
-<!--booton de olvidar la contraseña-->
+<!--recuperacion de contraseña-->
     <ion-button routerLink="/forgot-password" expand="full">¿Olvidaste tu contraseña?</ion-button>
   </div>
 </ion-content>
@@ -42,3 +44,14 @@
 
 
 
+<!--<form (ngSubmit)="enviarInformacion()">
+  <ion-item>
+    <ion-label position="floating">usuario</ion-label>
+    <ion-input type="email" [(ngModel)]="user.usuario" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="enviarInformacion()" >Iniciar Sesión</ion-button>
+</form>-->
