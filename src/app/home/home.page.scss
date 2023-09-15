@@ -8,20 +8,17 @@
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+img{
+  position: absolute;
+  min-height: 100vh;
+  background: no-repeat center center fixed;
+  background-size: cover;
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.centered-button {
+  display: flex;  
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  color: #d90ea9; 
+  border-color: #17d8c8;
 }

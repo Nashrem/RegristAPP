@@ -1,0 +1,85 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+/*img{
+    position: absolute;
+    min-height: 100vh;
+    background: no-repeat center center fixed;
+    background-size: cover;
+}*/
+ion-title{
+  text-align: center;
+}
+.background-image{
+  background-image: url('../../assets/logo.jpeg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  
+}
+.overlay-image {
+  background-image: url('../../assets/logo.jpeg');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  width: 100px; 
+  height: 100px; 
+  position: absolute;
+  top: 29%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+ion-list{
+  background-color: transparent;
+  position: absolute; 
+  top: 350px; 
+  left: 35px; 
+  /*background-color: #7126e095*/
+}
+
+
+ion-icon{
+  position: absolute;
+  font-size: 25px;
+  top: 427px;
+  right: 50%;
+}
+
+.centered-button {
+  background-color: transparent;
+  color: blue; /* Cambia el color del texto a azul */
+  border-bottom: 2px solid blue; 
+  font-size: 9px; /* Cambia el tamaño del texto a 12px (ajusta según tus preferencias) */
+  padding: 500px 125px; /* Ajusta el relleno del botón (ajusta según tus preferencias) */
+  top: 427px;
+
+}
+/*.centered-button {
+  display: flex;  
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  top: -110%;
+}*/
+
+
+
+
+/*<div class="background-image"></div>
+  <div class="overlay-image"></div>
+  <ion-list>
+      <ion-input label="Email" label-placement="floating"   placeholder="juanito@duoc.cl" ></ion-input>
+      <ion-input label="Password" label-placement="floating" type="{{ passwordVisible ? 'text' : 'password' }}"[(ngModel)]="password"name="password"></ion-input>
+      
+  </ion-list>
+  <ion-icon name="eye"  (click)="togglePasswordVisibility()" class="item-end"></ion-icon>
+  <div class="centered-button">
+    <ion-button routerLink="/signup" shape="signup">
+      Sign up
+    </ion-button>
+  </div>*/
