@@ -8,12 +8,15 @@ import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
 
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    MatSlideToggleModule
   ],
   declarations: [LoginPage]
 })

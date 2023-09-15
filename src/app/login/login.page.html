@@ -8,24 +8,37 @@
 </ion-header>
 <ion-content [fullscreen]="true">
   <img src="../../assets/login.png" alt="Login">
-  <ion-card #card>
+  <ion-card class="card" >
+    <ion-card-content>
+      <div class="background-image"></div>
+      <div class="overlay-image"></div>
+    </ion-card-content>
   </ion-card>
+<!-- correo and password-->
+  <!--<ion-list>
+    <ion-input label="Email" label-placement="floating"   placeholder="juanito@duoc.cl" ></ion-input>
+    <ion-input label="Password" label-placement="floating" type="{{ passwordVisible ? 'text' : 'password' }}"[(ngModel)]="password"name="password"></ion-input>
+  </ion-list>-->
+
+  
+<!--angular material--> 
+  <div class="centered-button">
+    <ion-button routerLink="/signup" shape="signup">
+      Sign up
+    </ion-button>
+    <!--animacion-->
+    <ion-button (click)="play()">Play</ion-button>
+  </div>
+  <div class="forgot-button">
+<!--booton de olvidar la contraseña-->
+    <ion-button routerLink="/forgot-password" expand="full">¿Olvidaste tu contraseña?</ion-button>
+  </div>
 </ion-content>
-<div class="background-image"></div>
-<div class="overlay-image"></div>
-<ion-list>
-  <ion-input label="Email" label-placement="floating"   placeholder="juanito@duoc.cl" ></ion-input>
-  <ion-input label="Password" label-placement="floating" type="{{ passwordVisible ? 'text' : 'password' }}"[(ngModel)]="password"name="password"></ion-input>
-</ion-list>
 
-<div class="centered-button">
-  <ion-button routerLink="/signup" shape="signup">
-    Sign up
-  </ion-button>
-  <ion-button (click)="play()">Play</ion-button>
-</div>
-<ion-button routerLink="/forgot-password" expand="full">¿Olvidaste tu contraseña?</ion-button>
-
+<!--angular material-->
+<article>
+  <mat-slide-toggle>Recordar</mat-slide-toggle>
+</article>
 
 
 
