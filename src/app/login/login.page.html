@@ -8,6 +8,8 @@
 </ion-header>
 <ion-content [fullscreen]="true">
   <img src="../../assets/login.png" alt="Login">
+  <ion-card #card>
+  </ion-card>
 </ion-content>
 <div class="background-image"></div>
 <div class="overlay-image"></div>
@@ -20,6 +22,7 @@
   <ion-button routerLink="/signup" shape="signup">
     Sign up
   </ion-button>
+  <ion-button (click)="play()">Play</ion-button>
 </div>
 <ion-button routerLink="/forgot-password" expand="full">¿Olvidaste tu contraseña?</ion-button>
 

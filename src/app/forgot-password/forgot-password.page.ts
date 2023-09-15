@@ -12,10 +12,6 @@ export class ForgotPasswordPage {
   constructor(private toastController: ToastController) {}
 
   async resetPassword() {
-    // Aquí debes implementar la lógica de recuperación de contraseña.
-    // Puedes enviar un correo electrónico al usuario o generar un token y proporcionar un enlace para restablecer la contraseña.
-
-    // Muestra un mensaje de confirmación al usuario
     const toast = await this.toastController.create({
       message: 'Se ha enviado un correo electrónico de recuperación de contraseña.',
       duration: 5000,

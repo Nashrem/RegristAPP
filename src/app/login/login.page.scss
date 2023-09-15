@@ -11,7 +11,7 @@ img{
   height: 100vh;
   
 }
-.overlay-image {
+/*.overlay-image {
   background-image: url('../../assets/logo1.png');
   background-size: contain; 
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@ img{
   top: 29%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
-}
+}*/
 ion-list{
   background-color: transparent;
   position: absolute; 
@@ -40,3 +40,14 @@ ion-list{
   position: absolute;
 }
 /*<ion-icon name="eye"  (click)="togglePasswordVisibility()" ></ion-icon>*/
+ion-card{
+  background-image: url('../../assets/logo1.png');
+  background-size: contain; 
+  background-repeat: no-repeat;
+  width: 100px; 
+  height: 100px; 
+  position: absolute;
+  top: 29%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
